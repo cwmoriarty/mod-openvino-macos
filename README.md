@@ -16,14 +16,7 @@ NOTE: This project does not include the OpenVINO module itself, its source code 
 
 ### Installation
 
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/audacity/mod-openvino-macos.git
-   cd mod-openvino-macos
-   ```
-
-2. **Install Dependencies:**
+1. **Install Dependencies:**
 
    Ensure all necessary dependencies are installed. This includes:
 
@@ -31,21 +24,29 @@ NOTE: This project does not include the OpenVINO module itself, its source code 
    - XCode 16
    - XCode Command Line Tools
    - Brew
+     
+2. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/audacity/mod-openvino-macos.git
+   cd mod-openvino-macos
+   ```
 
 3. **Build the Plugins:**
 
-   Execute the build scripts provided in the `scripts` directory:
+   Execute the build scripts (provided in the `scripts` directory):
 
 ```sh
-    ./scripts/prepare-build.sh
+    cd scripts
+    ./prepare-build.sh
     ./build.sh x86_64 # For Intel based Macs
-or 
+# or
     ./build.sh arm64 # For Apple silicon based Macs
 ```
 
 4. **Install the plugin:**
 
-   After building run the installer staging/Audacity-OpenVINO.pkg 
+   After building run the installer located in `staging/Audacity-OpenVINO.pkg`
 
 ## Troubleshooting
 
