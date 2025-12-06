@@ -34,14 +34,13 @@ NOTE: This project does not include the OpenVINO module itself, its source code 
 
 3. **Build the Plugins:**
 
-   Execute the build scripts (provided in the `scripts` directory):
+   Execute the build scripts (must be run from ./ and not the `scripts` directory):
 
-```sh
-    cd scripts
-    ./prepare-build.sh
-    ./build.sh x86_64 # For Intel based Macs
+```sh 
+    ./scripts/prepare-build.sh
+    ./scripts/build.sh x86_64 # For Intel based Macs
 # or
-    ./build.sh arm64 # For Apple silicon based Macs
+    ./scripts/build.sh arm64 # For Apple silicon based Macs
 ```
 
 4. **Install the plugin:**
